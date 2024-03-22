@@ -1,7 +1,3 @@
-let variavel = 10; // Consigo alterar o valor
+let variavel = 10 / 10; 
 
-variavel = 20;
-
-const pi = 3.14; // Impossível alterar o valor
-
-//console.log('Imprimir algo');
+console.log(variavel);
