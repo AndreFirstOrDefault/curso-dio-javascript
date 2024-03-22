@@ -14,4 +14,4 @@ let distanciaPercorrida = 100;
 let gastoCombustivel = 100/10;
 let gastoTotal = gastoCombustivel * precoCombustivel;
 
-console.log('Gasto da viagem: R$ ' + gastoTotal)
+console.log('Gasto da viagem: R$ ' + gastoTotal);
