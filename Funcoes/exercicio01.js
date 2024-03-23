@@ -38,12 +38,41 @@ function classificacaoImc(imc){
     }
 }
 
-function main(){
+// function main(){
+//     const peso = 85;
+//     const altura = 1.69;
+
+//     const imc = calcularIMC(peso,altura);
+//     console.log(classificacaoImc(imc));
+// }
+
+// console.log(main);
+// main();
+
+// const main2 = main;
+
+// console.log(main2);
+
+// main = function(){
+//     console.log(1);
+// }
+
+// main();
+
+// Função invocada imediatamente, cria e invoca, não precisa ser chamada
+// (function main(){
+//     const peso = 85;
+//     const altura = 1.69;
+
+//     const imc = calcularIMC(peso,altura);
+//     console.log(classificacaoImc(imc));
+// })();
+
+// Função invocada imediatamente, cria e invoca, não precisa ser chamada, pode-se tirar o nome da função, ela /só existe dentro do escopo
+(function (){
     const peso = 85;
     const altura = 1.69;
 
     const imc = calcularIMC(peso,altura);
     console.log(classificacaoImc(imc));
-}
-
-main();
+})();
