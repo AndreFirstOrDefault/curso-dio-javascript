@@ -19,9 +19,28 @@ class Pessoa{
     }
 
     mostrarImc(){
-        return `O valor do meu IMC é : ` + (this.peso/(this.altura * this.altura)).toFixed(0);
+        return (this.peso/(this.altura * this.altura)).toFixed(0);
+    }
+
+    classificarImc(){
+        const imc = this.mostrarImc();
+        if(imc < 18.5){
+            return `Abaixo do peso.`;
+        }
+        else if(imc >= 18.5 && imc < 25){
+            return `Peso normal`;
+        }
+        else if(imc >= 25 && imc < 30){
+            return `Acima do peso`;
+        }
+        else if(imc >= 30 && imc < 40){
+            return `Obeso`;
+        }
+        else{
+            return `Obesidade grave`;
+        }
     }
 }
 
 var p1 = new Pessoa(`Carlos Cassiano`, 85, 1.72);
-console.log(p1.mostrarImc());
+console.log(`Imc = ` + p1.mostrarImc() + ` - Classificação = ` + p1.classificarImc());
