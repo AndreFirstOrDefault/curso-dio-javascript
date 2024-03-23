@@ -18,8 +18,17 @@ const pessoa = {
 
 // console.log(andre);
 
-pessoa.descrever = function(){
-    console.log(`Meu nome é ${this.nome}`);
-}
+// pessoa.descrever = function(){
+//     console.log(`Meu nome é ${this.nome}`);
+// }
 
-pessoa.descrever();
+// pessoa.descrever();
+
+const atributo = `idade`;
+
+console.log(pessoa[atributo]);
+
+pessoa['nome'] = `teste`;
+pessoa.nome = `teste`;
+
+console.log(teste);
