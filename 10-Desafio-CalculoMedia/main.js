@@ -22,6 +22,9 @@ if(media >= 7){
 else if(media >= 5 && media < 7){
     print('Recuperação');
 }
-else{
+else if(media < 5 && media >= 0){
     print('Reprovado');
+}
+else{
+    print('Inválido');
 }
