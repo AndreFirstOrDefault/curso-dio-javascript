@@ -1,4 +1,4 @@
-const media = 7;
+const media = 5.5;
 
 function gets(){
     return media;
